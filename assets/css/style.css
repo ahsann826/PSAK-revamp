@@ -8,19 +8,20 @@
 /* --- Design Tokens & Variables --- */
 :root {
   /* Brand Colors */
-  --primary: #0a5c36;
-  --primary-dark: #064025;
-  --primary-deep: #032b18;
-  --primary-light: #16a34a;
+  --primary: #06402B;
+  --primary-dark: #042e1f;
+  --primary-deep: #032418;
+  --primary-light: #0d5f41;
   --primary-50: #f0fdf4;
   --primary-100: #dcfce7;
   --primary-200: #bbf7d0;
 
-  /* Accent Gold / Amber */
-  --accent: #d97706;
-  --accent-light: #f59e0b;
-  --accent-50: #fffbeb;
-  --accent-100: #fef3c7;
+  /* Accent */
+  --accent: #06402B;
+  --accent-gold: #d97706;
+  --accent-light: #0d5f41;
+  --accent-50: #f0fdf4;
+  --accent-100: #dcfce7;
 
   /* Neutral Slates */
   --slate-900: #0f172a;
@@ -43,7 +44,7 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.06), 0 4px 6px -4px rgba(0, 0, 0, 0.02);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
-  --shadow-emerald: 0 8px 20px -4px rgba(10, 92, 54, 0.2);
+  --shadow-emerald: 0 8px 20px -4px rgba(6, 64, 43, 0.28);
 
   /* Borders & Radius */
   --radius-sm: 5px;
@@ -165,7 +166,7 @@ p:last-child { margin-bottom: 0; }
 
 .bg-slate { background-color: var(--slate-50); }
 .bg-white { background-color: var(--white); }
-.bg-emerald { background-color: var(--primary-deep); color: var(--white); }
+.bg-emerald { background-color: var(--primary); color: var(--white); }
 
 /* --- Main Header & Sticky Navigation --- */
 .site-header {
@@ -666,7 +667,7 @@ p:last-child { margin-bottom: 0; }
 .pillar-tag {
   font-size: 0.7rem;
   font-weight: 800;
-  color: #0a5c36;
+  color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-align: center;
@@ -687,7 +688,7 @@ p:last-child { margin-bottom: 0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0a5c36;
+  color: var(--primary);
 }
 
 .pillar-5-card .pillar-title {
@@ -722,7 +723,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .pillar-5-card.cta-card .btn-learn-more {
-  background-color: #064025;
+  background-color: var(--primary);
   color: var(--white);
   font-size: 0.8rem;
   font-weight: 700;
@@ -734,7 +735,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .pillar-5-card.cta-card .btn-learn-more:hover {
-  background-color: #0a5c36;
+  background-color: var(--primary-dark);
   color: var(--white);
   transform: translateY(-1px);
 }
@@ -1890,7 +1891,8 @@ textarea.form-control {
 .president-message-section {
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 18% 50%, #07472e 0%, #043622 60%, #022416 100%);
+  background-color: #06402B;
+  background: radial-gradient(circle at 18% 50%, #0a5439 0%, #06402B 60%, #032418 100%);
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
 }
