@@ -1886,49 +1886,69 @@ textarea.form-control {
   background-color: var(--primary);
 }
 
-/* --- President's Message Banner with Left-Aligned Crescent & Star --- */
+/* --- President's Message Banner with Pakistan Crescent & Star --- */
 .president-message-section {
   position: relative;
   overflow: hidden;
-  background: #0a3d22;
+  background: radial-gradient(circle at 18% 50%, #07472e 0%, #043622 60%, #022416 100%);
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
 }
 
-/* Inline SVG absolutely positioned on the left, partially cropped */
-.president-crescent-svg {
+.president-crescent-watermark {
   position: absolute;
   top: 50%;
-  left: -60px;
+  left: 3.5rem;
   transform: translateY(-50%);
-  width: 340px;
-  height: 340px;
+  width: 310px;
+  max-height: 90%;
   pointer-events: none;
   z-index: 1;
-  overflow: visible;
+  opacity: 0.32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 30px rgba(52, 211, 153, 0.25));
+  transition: all var(--transition-normal);
 }
 
-@media (min-width: 1200px) {
-  .president-crescent-svg {
-    left: -40px;
-    width: 360px;
-    height: 360px;
+.president-crescent-png {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.president-message-container {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 1400px) {
+  .president-crescent-watermark {
+    left: 4.5rem;
+    width: 340px;
+    opacity: 0.34;
   }
 }
 
 @media (max-width: 992px) {
-  .president-crescent-svg {
-    left: -80px;
-    width: 280px;
-    height: 280px;
+  .president-crescent-watermark {
+    left: 1rem;
+    width: 230px;
+    opacity: 0.24;
   }
 }
 
-@media (max-width: 640px) {
-  .president-crescent-svg {
-    left: -100px;
-    width: 220px;
-    height: 220px;
+@media (max-width: 768px) {
+  /* On mobile: centered behind the banner content */
+  .president-crescent-watermark {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    max-width: 80vw;
+    opacity: 0.12;
   }
 }
 

@@ -386,37 +386,13 @@
   </section>
 
   <!-- President's Message Banner -->
-  <section class="section bg-emerald president-message-section">
-    <!-- Inline Crescent & Star SVG - precisely matching the reference design -->
-    <svg class="president-crescent-svg" aria-hidden="true" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
-      <!--
-        Crescent geometry:
-        Outer circle: center=(190,210), R=200  → big arc on the left
-        Inner circle: center=(240,200), R=175  → cuts away the right side
-        Intersection points calculated analytically
-      -->
-      <!-- Crescent Moon -->
-      <path d="M 166.1 14.5
-               A 200 200 0 1 0 233.3 406.2
-               A 175 175 0 1 1 166.1 14.5 Z"
-            fill="rgba(255,255,255,0.18)" />
-      <!-- 5-Pointed Star (upper right of crescent hollow) -->
-      <!-- Center: (295,118), outer radius=42, inner radius=16, pointing straight up -->
-      <polygon points="
-        295.0,76.0
-        306.2,110.3
-        342.4,110.3
-        313.7,131.7
-        324.9,166.0
-        295.0,145.3
-        265.1,166.0
-        276.3,131.7
-        247.6,110.3
-        283.8,110.3"
-        fill="rgba(255,255,255,0.18)" />
-    </svg>
+  <section class="section president-message-section">
+    <!-- Crescent & Star Watermark (Desktop: Left-aligned, Mobile: Centered behind content) -->
+    <div class="president-crescent-watermark" aria-hidden="true">
+      <img src="assets/images/pakistan_crescent_star.png" alt="" class="president-crescent-png">
+    </div>
 
-    <div class="container" style="position: relative; z-index: 2;">
+    <div class="container president-message-container">
       <div style="max-width: 720px; margin: 0 auto; text-align: center;">
         <h2 style="color: var(--white); margin-bottom: 1rem; font-size: 1.45rem;">"Standing Together as One Academic Community in Korea"</h2>
         <blockquote style="font-size: 0.95rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem; font-style: italic;">
