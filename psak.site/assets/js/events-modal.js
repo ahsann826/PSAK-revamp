@@ -198,8 +198,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalAttendance = modalOverlay.querySelector('#eventModalAttendance');
   const modalOrganizer = modalOverlay.querySelector('#eventModalOrganizer');
   const modalOverview = modalOverlay.querySelector('#eventModalOverview');
-  const modalHighlightsList = modalOverlay.querySelector('#eventModalHighlights');
-  const modalScheduleList = modalOverlay.querySelector('#eventModalSchedule');
   const modalInclusionsGrid = modalOverlay.querySelector('#eventModalInclusions');
   const modalPhotosGrid = modalOverlay.querySelector('#eventModalPhotos');
   const modalPhotosCount = modalOverlay.querySelector('#eventModalPhotosCount');
@@ -241,35 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
       modalOverview.textContent = event.overview;
     }
 
-    // 3. Populate Key Highlights
-    if (modalHighlightsList) {
-      modalHighlightsList.innerHTML = '';
-      event.highlights.forEach(highlight => {
-        const li = document.createElement('li');
-        li.className = 'event-highlight-item';
-        li.innerHTML = `<span class="highlight-bullet">✓</span> <span>${highlight}</span>`;
-        modalHighlightsList.appendChild(li);
-      });
-    }
-
-    // 4. Populate Schedule Timeline
-    if (modalScheduleList) {
-      modalScheduleList.innerHTML = '';
-      event.schedule.forEach(item => {
-        const row = document.createElement('div');
-        row.className = 'event-timeline-item';
-        row.innerHTML = `
-          <div class="timeline-time-badge">${item.time}</div>
-          <div class="timeline-details">
-            <h5 class="timeline-title">${item.title}</h5>
-            <p class="timeline-desc">${item.desc}</p>
-          </div>
-        `;
-        modalScheduleList.appendChild(row);
-      });
-    }
-
-    // 5. Populate Key Info / Inclusions
+    // 3. Populate Key Info / Inclusions
     if (modalInclusionsGrid) {
       modalInclusionsGrid.innerHTML = '';
       event.inclusions.forEach(inc => {
