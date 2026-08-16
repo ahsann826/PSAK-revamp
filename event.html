@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events &amp; Photo Gallery | PSAK</title>
+  <meta name="description" content="Explore PSAK's nationwide cricket leagues, BBQ meetups, Independence Day celebrations, and photo albums across South Korea.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/psak_logo.png">
+</head>
+<body>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" class="brand-logo-img">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About &amp; Cabinet</a></li>
+          <li><a href="scholarship.html" class="nav-link">Scholarships</a></li>
+          <li><a href="event.html" class="nav-link active">Events &amp; Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Support &amp; Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm open-donate-modal" id="topDonateBtn">Donate</button>
+          <a href="login.html" class="btn btn-primary btn-sm">Member Portal</a>
+          <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 34px; width: auto;">
+        </a>
+        <button class="drawer-close" aria-label="Close Navigation Drawer">&times;</button>
+      </div>
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About &amp; Leadership</a></li>
+        <li><a href="scholarship.html" class="nav-link">Scholarships in Korea</a></li>
+        <li><a href="event.html" class="nav-link active">Events &amp; Activities</a></li>
+        <li><a href="contact.html" class="nav-link">Contact &amp; Helpdesk</a></li>
+      </ul>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn btn-gold btn-block open-donate-modal">Student Emergency Fund</button>
+      <a href="login.html" class="btn btn-primary btn-block">Member Portal / Register</a>
+    </div>
+  </aside>
+
+  <!-- Page Banner (Clean Header without subtitle line) -->
+  <section class="section-sm bg-emerald" style="padding-top: 2.25rem; padding-bottom: 2.25rem;">
+    <div class="container text-center">
+      <h1 style="color: var(--white); margin: 0; font-size: 1.85rem;">Events &amp; Photo Gallery</h1>
+    </div>
+  </section>
+
+  <!-- Events List Section -->
+  <section class="section bg-slate">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="search-input-wrap">
+          <input type="text" id="filterSearchInput" placeholder="Search events (e.g. Cricket, BBQ, Independence)..." aria-label="Search events">
+        </div>
+        <div class="filter-pills">
+          <button class="filter-btn active" data-filter="all">All Events</button>
+          <button class="filter-btn" data-filter="sports">Sports</button>
+          <button class="filter-btn" data-filter="meetup">Regional Meetups</button>
+          <button class="filter-btn" data-filter="cultural">Cultural</button>
+        </div>
+      </div>
+
+      <div class="events-grid">
+        <!-- Event 1: Cricket League -->
+        <article class="event-card" data-category="sports">
+          <div class="event-image-wrap">
+            <img src="assets/images/events/event_cricket_cover.png" alt="PSAK Cricket League">
+            <div class="event-date-badge">
+              <span class="day">22</span>
+              <span class="month">Apr</span>
+            </div>
+            <span class="event-category-tag">Sports League</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-title">PSAK All-Korea Cricket League</h3>
+            <div class="event-meta">
+              <span>Location: Ansan Stadium</span>
+              <span>Teams: 12 Teams</span>
+            </div>
+            <p class="event-desc">
+              Annual sporting tournament where teams from Seoul, Incheon, Daegu, Daejeon, and Busan compete for the PSAK Trophy.
+            </p>
+          </div>
+        </article>
+
+        <!-- Event 2: Cheongju BBQ Meetup -->
+        <article class="event-card" data-category="meetup">
+          <div class="event-image-wrap">
+            <img src="assets/images/events/event_bbq_cover.jpg" alt="Central Region BBQ Meetup">
+            <div class="event-date-badge">
+              <span class="day">26</span>
+              <span class="month">Mar</span>
+            </div>
+            <span class="event-category-tag">Regional Meetup</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-title">Central Region Meetup &amp; BBQ</h3>
+            <div class="event-meta">
+              <span>Location: Cheongju City</span>
+              <span>Attendees: 80+ Scholars</span>
+            </div>
+            <p class="event-desc">
+              Spring gathering welcoming new students to Chungcheong &amp; Daejeon universities with delicious BBQ and networking.
+            </p>
+          </div>
+        </article>
+
+        <!-- Event 3: Independence Day -->
+        <article class="event-card" data-category="cultural">
+          <div class="event-image-wrap">
+            <img src="assets/images/events/event_indep_cover.jpg" alt="Independence Day Celebrations">
+            <div class="event-date-badge">
+              <span class="day">15</span>
+              <span class="month">Aug</span>
+            </div>
+            <span class="event-category-tag">Cultural Heritage</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-title">Pakistan &amp; Korea Independence Day</h3>
+            <div class="event-meta">
+              <span>Location: Seoul Central Hall</span>
+              <span>Delegates: Embassy &amp; Scholars</span>
+            </div>
+            <p class="event-desc">
+              Cultural festival commemorating Pakistan Independence and Korean National Liberation Day (Gwangbokjeol).
+            </p>
+          </div>
+        </article>
+
+        <!-- Event 4: Annual Membership Drive -->
+        <article class="event-card" data-category="meetup">
+          <div class="event-image-wrap">
+            <img src="assets/images/events/gallery_1.jpg" alt="PSAK Membership Drive">
+            <div class="event-date-badge">
+              <span class="day">23</span>
+              <span class="month">Mar</span>
+            </div>
+            <span class="event-category-tag">Orientation</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-title">All-Korea Scholar Orientation</h3>
+            <div class="event-meta">
+              <span>Location: Hybrid Event</span>
+              <span>Attendees: 500+ Scholars</span>
+            </div>
+            <p class="event-desc">
+              Semestral orientation providing visa guidance, Korean language resources, and registration for freshmen in Korea.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Album Section -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-header">
+        <h2>Photo Albums &amp; Highlights</h2>
+        <p class="lead-text">Click any photo below to inspect high-resolution album captures from recent tournaments and gatherings.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-caption="PSAK Cricket Tournament - Champion Celebration">
+          <img src="assets/images/events/gallery_1.jpg" alt="PSAK Cricket Tournament">
+          <div class="gallery-item-overlay">View Photo</div>
+        </div>
+        <div class="gallery-item" data-caption="Cricket League - Match Action">
+          <img src="assets/images/events/gallery_2.jpg" alt="Cricket Match Action">
+          <div class="gallery-item-overlay">View Photo</div>
+        </div>
+        <div class="gallery-item" data-caption="Central Region BBQ - Cheongju Community Gathering">
+          <img src="assets/images/events/gallery_14.jpg" alt="Cheongju BBQ Gathering">
+          <div class="gallery-item-overlay">View Photo</div>
+        </div>
+        <div class="gallery-item" data-caption="Scholars Gathering &amp; Academic Networking">
+          <img src="assets/images/events/gallery_15.jpg" alt="Scholars Gathering">
+          <div class="gallery-item-overlay">View Photo</div>
+        </div>
+        <div class="gallery-item" data-caption="Tournament Trophy Award Ceremony">
+          <img src="assets/images/events/gallery_5.jpg" alt="Trophy Award Ceremony">
+          <div class="gallery-item-overlay">View Photo</div>
+        </div>
+        <div class="gallery-item" data-caption="Regional University Chapter Delegation">
+          <img src="assets/images/events/gallery_6.jpg" alt="Regional University Chapter">
+          <div class="gallery-item-overlay">View Photo</div>
+        </div>
+        <div class="gallery-item" data-caption="Annual Spring Scholar Lunch &amp; Discussion">
+          <img src="assets/images/events/gallery_18.jpg" alt="Spring Scholar Lunch">
+          <div class="gallery-item-overlay">View Photo</div>
+        </div>
+        <div class="gallery-item" data-caption="Group Photo - Pakistani Scholars in South Korea">
+          <img src="assets/images/events/gallery_22.jpg" alt="Group Photo Scholars Korea">
+          <div class="gallery-item-overlay">View Photo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Lightbox Modal -->
+  <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Enlarged Photo" class="lightbox-img">
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Emergency Support Modal -->
+  <div class="modal-overlay" id="donationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn close-modal" aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <h3 id="modalTitle" style="font-size: 1.25rem;">PSAK Student Emergency Fund</h3>
+        <p style="font-size: 0.825rem; color: var(--slate-600); margin-top: 0.35rem;">
+          Your contributions directly assist fellow Pakistani students facing urgent medical, accommodation, or emergency situations in South Korea.
+        </p>
+      </div>
+
+      <div class="bank-detail-box">
+        <div class="bank-row">
+          <span class="bank-label">Bank Name</span>
+          <span class="bank-value">KEB HANA BANK (하나은행)</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Number</span>
+          <span class="bank-value">545-910007-72004</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Holder</span>
+          <span class="bank-value">파키스탄 스트던트 앤드 (PSAK)</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <button class="btn btn-primary btn-block copy-account-btn" data-account="545-910007-72004">
+          Copy Account (545-910007-72004)
+        </button>
+        <button class="btn btn-secondary btn-block close-modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-msg"></div>
+
+  <!-- Clean White Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.85rem;">
+            <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 46px; width: auto; max-width: 170px; object-fit: contain;">
+          </a>
+          <p style="margin-bottom: 0.85rem;">
+            Pakistan Students and Scholars Association Korea is a non-profit, student-led organization representing Pakistani academics and researchers across South Korea.
+          </p>
+          <p style="font-size: 0.78rem; color: var(--slate-500);">
+            Headquarters: Seoul, South Korea
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us &amp; Cabinet</a></li>
+            <li><a href="scholarship.html">Scholarship Directory</a></li>
+            <li><a href="event.html">Events &amp; Galleries</a></li>
+            <li><a href="contact.html">Support &amp; Emergency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="login.html">Member Portal</a></li>
+            <li><a href="#" class="open-donate-modal">Emergency Welfare Fund</a></li>
+            <li><a href="about.html#regional">Regional Chapters</a></li>
+            <li><a href="scholarship.html#roadmap">Application Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Emergency Contacts</h4>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Embassy of Pakistan, Seoul:</strong><br>
+            +82-2-796-8252
+          </p>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Korea Emergency:</strong> 112 (Police) | 119 (Medical/Fire)
+          </p>
+          <p style="font-size: 0.78rem;">
+            <strong>Immigration:</strong> 1345
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Pakistan Students and Scholars Association Korea (PSAK). All Rights Reserved.</div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="mailto:psak.korea@gmail.com">psak.korea@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filter.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

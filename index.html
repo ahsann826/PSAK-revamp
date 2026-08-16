@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSAK | Pakistan Students and Scholars Association Korea</title>
+  <meta name="description" content="Official platform for Pakistani students, researchers, and professors residing across South Korea. Empowering academic growth, cultural exchange, and welfare support.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/psak_logo.png">
+</head>
+<body>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <!-- Official Logo -->
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About &amp; Cabinet</a></li>
+          <li><a href="scholarship.html" class="nav-link">Scholarships</a></li>
+          <li><a href="event.html" class="nav-link">Events &amp; Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Support &amp; Contact</a></li>
+        </ul>
+
+        <!-- Action Buttons -->
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm open-donate-modal" id="topDonateBtn">Donate</button>
+          <a href="login.html" class="btn btn-primary btn-sm">Member Portal</a>
+          <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Backdrop -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 34px; width: auto;">
+        </a>
+        <button class="drawer-close" aria-label="Close Navigation Drawer">&times;</button>
+      </div>
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About &amp; Leadership</a></li>
+        <li><a href="scholarship.html" class="nav-link">Scholarships in Korea</a></li>
+        <li><a href="event.html" class="nav-link">Events &amp; Activities</a></li>
+        <li><a href="contact.html" class="nav-link">Contact &amp; Helpdesk</a></li>
+      </ul>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn btn-gold btn-block open-donate-modal">Student Emergency Fund</button>
+      <a href="login.html" class="btn btn-primary btn-block">Member Portal / Register</a>
+    </div>
+  </aside>
+
+  <!-- Hero Slideshow Section (Smooth Horizontal Slide-In) -->
+  <section class="hero-slider-section">
+    <div class="slider-wrapper">
+      <div class="slider-track">
+        <!-- Slide 1: Original Cultural Gathering Photo -->
+        <div class="slide-item" style="background-image: url('assets/images/hero_slide_1.jpg');">
+          <div class="slide-overlay"></div>
+          <div class="container">
+            <div class="slide-content">
+              <h1 class="slide-title">Pakistan Students &amp; Scholars Association Korea</h1>
+              <p class="slide-desc">
+                Providing a unified platform to Pakistani students, researchers, and professors residing in South Korea for academic guidance, welfare support, and community connection.
+              </p>
+              <div class="slide-cta-group">
+                <a href="login.html" class="btn btn-primary">Join Association</a>
+                <a href="scholarship.html" class="btn btn-outline-white">Scholarships</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Original Embassy of Pakistan Community Photo -->
+        <div class="slide-item" style="background-image: url('assets/images/hero_slide_2.jpg');">
+          <div class="slide-overlay"></div>
+          <div class="container">
+            <div class="slide-content">
+              <h1 class="slide-title">Empowering Your Academic Journey in South Korea</h1>
+              <p class="slide-desc">
+                From laboratory guidance and GKS scholarship navigation to nationwide events, research networks, and welfare assistance.
+              </p>
+              <div class="slide-cta-group">
+                <a href="about.html" class="btn btn-primary">Our Cabinet</a>
+                <a href="event.html" class="btn btn-outline-white">Events</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="slider-arrows">
+      <button class="slider-arrow-btn slider-prev" aria-label="Previous Slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button class="slider-arrow-btn slider-next" aria-label="Next Slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+
+    <!-- Slide Indicators -->
+    <div class="slider-dots">
+      <button class="slider-dot active" aria-label="Go to Slide 1"></button>
+      <button class="slider-dot" aria-label="Go to Slide 2"></button>
+    </div>
+  </section>
+
+  <!-- Metric Counter Strip -->
+  <section class="container">
+    <div class="metrics-strip">
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <div class="metric-number" data-target="109" data-suffix="+">109+</div>
+          <div class="metric-label">Korean Universities</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number" data-target="1500" data-suffix="+">1,500+</div>
+          <div class="metric-label">Scholars &amp; Students</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number" data-target="25" data-suffix="+">25+</div>
+          <div class="metric-label">Annual Events</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number" data-target="100" data-suffix="%">100%</div>
+          <div class="metric-label">Volunteer Driven</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why PSAK Exists Section (5 Pillars with Desktop Grid & Mobile 1-Card Carousel with Arrows & Dots) -->
+  <section class="section bg-slate">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why PSAK Exists</h2>
+        <p class="lead-text">Dedicated to representation, guidance, and welfare for Pakistani scholars across Korea.</p>
+      </div>
+
+      <!-- Carousel Container -->
+      <div class="pillars-carousel-wrapper">
+        <div class="pillars-5-grid" id="pillarsSliderTrack">
+          <!-- Card 1: Representation -->
+          <article class="pillar-5-card">
+            <img src="assets/images/psak_logo.png" alt="PSAK Logo" class="pillar-top-logo">
+            <div class="pillar-tag">PILLAR 01</div>
+            <div class="pillar-header-wrap">
+              <div class="pillar-svg-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0a5c36" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m11 17 2 2a1 1 0 0 0 1.4 0l4.3-4.3a1 1 0 0 0 0-1.4l-3-3a1 1 0 0 0-1.4 0L12 12"></path>
+                  <path d="m13 7-2-2a1 1 0 0 0-1.4 0L5.3 9.3a1 1 0 0 0 0 1.4l3 3a1 1 0 0 0 1.4 0L12 12"></path>
+                  <rect x="3" y="3" width="7" height="5" rx="1"></rect>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Representation</h3>
+            </div>
+            <p class="pillar-desc">
+              Providing active representation to Pakistani students across Korean universities, embassies, and international bodies.
+            </p>
+          </article>
+
+          <!-- Card 2: Knowledge Exchange -->
+          <article class="pillar-5-card">
+            <img src="assets/images/psak_logo.png" alt="PSAK Logo" class="pillar-top-logo">
+            <div class="pillar-tag">PILLAR 02</div>
+            <div class="pillar-header-wrap">
+              <div class="pillar-svg-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0a5c36" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  <path d="m7 8 2-2-2-2"></path>
+                  <path d="m17 12-2 2 2 2"></path>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Knowledge<br>Exchange</h3>
+            </div>
+            <p class="pillar-desc">
+              Facilitating academic symposiums, research collaboration, and peer insights across STEM and humanities.
+            </p>
+          </article>
+
+          <!-- Card 3: Scholarship Guidance -->
+          <article class="pillar-5-card">
+            <img src="assets/images/psak_logo.png" alt="PSAK Logo" class="pillar-top-logo">
+            <div class="pillar-tag">PILLAR 03</div>
+            <div class="pillar-header-wrap">
+              <div class="pillar-svg-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0a5c36" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  <circle cx="18" cy="18" r="3.5" fill="#f0fdf4"></circle>
+                  <path d="m16.8 18 0.8 0.8 1.6-1.6"></path>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Scholarship<br>Guidance</h3>
+            </div>
+            <p class="pillar-desc">
+              Guiding prospective applicants and newcomers through GKS/KGSP requirements, professor labs, and visa paperwork.
+            </p>
+          </article>
+
+          <!-- Card 4: Emergency Welfare -->
+          <article class="pillar-5-card">
+            <img src="assets/images/psak_logo.png" alt="PSAK Logo" class="pillar-top-logo">
+            <div class="pillar-tag">PILLAR 04</div>
+            <div class="pillar-header-wrap">
+              <div class="pillar-svg-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0a5c36" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="M12 8.5c-1.3-1.3-3 0-3 1.3 0 1.8 3 3.7 3 3.7s3-1.9 3-3.7c0-1.3-1.7-2.6-3-1.3z" fill="#0a5c36"></path>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Emergency<br>Welfare</h3>
+            </div>
+            <p class="pillar-desc">
+              Assisting members during unexpected medical, financial, or legal challenges in South Korea through our emergency fund.
+            </p>
+          </article>
+
+          <!-- Card 5: Join the Community CTA -->
+          <article class="pillar-5-card cta-card">
+            <div>
+              <img src="assets/images/psak_logo.png" alt="PSAK Logo" class="pillar-top-logo">
+              <h3 class="cta-title">Join the community.</h3>
+              <p class="pillar-desc" style="margin-bottom: 1.25rem;">
+                Follow us to stay connected, get support, and grow together in Korea.
+              </p>
+            </div>
+            <a href="login.html" class="btn btn-learn-more">Learn More</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Mobile Slider Controls (Arrows and Dots beneath cards) -->
+      <div class="pillars-mobile-controls" aria-label="Pillars Slider Controls">
+        <button class="pillars-arrow-btn" id="pillarPrevBtn" aria-label="Previous Pillar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <div class="pillars-dots" id="pillarDots"></div>
+        <button class="pillars-arrow-btn" id="pillarNextBtn" aria-label="Next Pillar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Community Activities / Events Section (Placed on top of Guides section) -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recent &amp; Upcoming Gatherings</h2>
+        <p class="lead-text">From regional BBQ meetups and cricket tournaments to national day celebrations.</p>
+      </div>
+
+      <div class="events-grid">
+        <!-- Event 1 -->
+        <article class="event-card">
+          <div class="event-image-wrap">
+            <img src="assets/images/events/event_cricket_cover.png" alt="PSAK Cricket League">
+            <div class="event-date-badge">
+              <span class="day">22</span>
+              <span class="month">Apr</span>
+            </div>
+            <span class="event-category-tag">Sports League</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-title">PSAK All-Korea Cricket League</h3>
+            <div class="event-meta">
+              <span>Location: Ansan Stadium</span>
+              <span>Teams: 12 Teams</span>
+            </div>
+            <p class="event-desc">
+              Flagship nationwide cricket championship bringing together university scholar teams for friendly competition.
+            </p>
+            <a href="event.html" class="btn btn-outline btn-sm">View Photos &amp; Album</a>
+          </div>
+        </article>
+
+        <!-- Event 2 -->
+        <article class="event-card">
+          <div class="event-image-wrap">
+            <img src="assets/images/events/event_bbq_cover.jpg" alt="Central Region Cheongju BBQ">
+            <div class="event-date-badge">
+              <span class="day">26</span>
+              <span class="month">Mar</span>
+            </div>
+            <span class="event-category-tag">Regional Meetup</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-title">Central Region Meetup &amp; BBQ</h3>
+            <div class="event-meta">
+              <span>Location: Cheongju City</span>
+              <span>Attendees: 80+ Scholars</span>
+            </div>
+            <p class="event-desc">
+              Spring gathering welcoming new semester scholars, networking with senior researchers, and delicious food.
+            </p>
+            <a href="event.html" class="btn btn-outline btn-sm">View Photos &amp; Album</a>
+          </div>
+        </article>
+
+        <!-- Event 3 -->
+        <article class="event-card">
+          <div class="event-image-wrap">
+            <img src="assets/images/events/event_indep_cover.jpg" alt="Independence Day Celebrations">
+            <div class="event-date-badge">
+              <span class="day">15</span>
+              <span class="month">Aug</span>
+            </div>
+            <span class="event-category-tag">Cultural Heritage</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-title">Pakistan &amp; Korea Independence Day</h3>
+            <div class="event-meta">
+              <span>Location: Seoul Central Hall</span>
+              <span>Delegates: Embassy &amp; Scholars</span>
+            </div>
+            <p class="event-desc">
+              Commemorating national heritage and celebrating bilateral friendship between Pakistan and Korea.
+            </p>
+            <a href="event.html" class="btn btn-outline btn-sm">View Photos &amp; Album</a>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="event.html" class="btn btn-primary btn-sm">Browse All Events &amp; Photo Albums</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Student Guides to Korea Section -->
+  <section class="section bg-slate">
+    <div class="container">
+      <div class="section-header">
+        <h2>Life &amp; Study in South Korea</h2>
+        <p class="lead-text">Crucial information for newcomers and scholars navigating Korean academic life.</p>
+      </div>
+
+      <div class="guides-grid">
+        <div class="guide-box">
+          <div class="guide-info">
+            <h4>GKS &amp; Lab Scholarships</h4>
+            <p>Roadmap for securing Korean government and professor research funding.</p>
+            <a href="scholarship.html" class="guide-link">Explore Opportunities</a>
+          </div>
+        </div>
+        <div class="guide-box">
+          <div class="guide-info">
+            <h4>ARC &amp; Visa Navigation</h4>
+            <p>Alien Registration Card (ARC), D-2 student visas, and D-10 job search guidance.</p>
+            <a href="contact.html" class="guide-link">View Visa Tips</a>
+          </div>
+        </div>
+        <div class="guide-box">
+          <div class="guide-info">
+            <h4>NHIS Health Insurance</h4>
+            <p>Mandatory Korean national health insurance coverage, clinics, and claims.</p>
+            <a href="contact.html" class="guide-link">Read Healthcare Guide</a>
+          </div>
+        </div>
+        <div class="guide-box">
+          <div class="guide-info">
+            <h4>Halal Food &amp; Prayer Spaces</h4>
+            <p>Directory of Halal groceries, campus prayer rooms, and central mosques.</p>
+            <a href="contact.html" class="guide-link">Find Local Spots</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- President's Message Banner -->
+  <section class="section bg-emerald" style="padding-top: 2.75rem; padding-bottom: 2.75rem;">
+    <div class="container">
+      <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+        <h2 style="color: var(--white); margin-bottom: 1rem; font-size: 1.45rem;">"Standing Together as One Academic Community in Korea"</h2>
+        <blockquote style="font-size: 0.95rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem; font-style: italic;">
+          “PSAK was established to ensure that no Pakistani scholar ever feels alone in South Korea. Whether you are navigating your first lab meeting or pursuing breakthrough scientific research, our association is here to support your journey every step of the way.”
+        </blockquote>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 0.85rem;">
+          <img src="assets/images/team/waseem_iqbal_president.jpg" alt="President" style="width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--accent); object-fit: cover;">
+          <div style="text-align: left;">
+            <div style="font-weight: 700; color: var(--white); font-size: 0.95rem;">Waseem Iqbal Rao</div>
+            <div style="font-size: 0.78rem; color: rgba(255, 255, 255, 0.75);">President, PSAK | Ph.D. Researcher, Yonsei University</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Support & Donation Modal -->
+  <div class="modal-overlay" id="donationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn close-modal" aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <h3 id="modalTitle" style="font-size: 1.25rem;">PSAK Student Emergency Fund</h3>
+        <p style="font-size: 0.825rem; color: var(--slate-600); margin-top: 0.35rem;">
+          Your contributions directly assist fellow Pakistani students facing urgent medical, accommodation, or emergency situations in South Korea.
+        </p>
+      </div>
+
+      <div class="bank-detail-box">
+        <div class="bank-row">
+          <span class="bank-label">Bank Name</span>
+          <span class="bank-value">KEB HANA BANK (하나은행)</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Number</span>
+          <span class="bank-value" id="accountNumDisplay">545-910007-72004</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Holder</span>
+          <span class="bank-value">파키스탄 스트던트 앤드 (PSAK)</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <button class="btn btn-primary btn-block copy-account-btn" data-account="545-910007-72004">
+          Copy Account (545-910007-72004)
+        </button>
+        <button class="btn btn-secondary btn-block close-modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-msg"></div>
+
+  <!-- Clean White Footer with Official Logo -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.85rem;">
+            <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 46px; width: auto; max-width: 170px; object-fit: contain;">
+          </a>
+          <p style="margin-bottom: 0.85rem;">
+            Pakistan Students and Scholars Association Korea is a non-profit, student-led organization representing Pakistani academics and researchers across South Korea.
+          </p>
+          <p style="font-size: 0.78rem; color: var(--slate-500);">
+            Headquarters: Seoul, South Korea
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us &amp; Cabinet</a></li>
+            <li><a href="scholarship.html">Scholarship Directory</a></li>
+            <li><a href="event.html">Events &amp; Galleries</a></li>
+            <li><a href="contact.html">Support &amp; Emergency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="login.html">Member Portal</a></li>
+            <li><a href="#" class="open-donate-modal">Emergency Welfare Fund</a></li>
+            <li><a href="about.html#regional">Regional Chapters</a></li>
+            <li><a href="scholarship.html#roadmap">Application Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Emergency Contacts</h4>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Embassy of Pakistan, Seoul:</strong><br>
+            +82-2-796-8252
+          </p>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Korea Emergency:</strong> 112 (Police) | 119 (Medical/Fire)
+          </p>
+          <p style="font-size: 0.78rem;">
+            <strong>Immigration:</strong> 1345
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Pakistan Students and Scholars Association Korea (PSAK). All Rights Reserved.</div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="mailto:psak.korea@gmail.com">psak.korea@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

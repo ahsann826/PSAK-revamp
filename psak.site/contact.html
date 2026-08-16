@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support &amp; Contact | PSAK</title>
+  <meta name="description" content="Reach out to PSAK executive members for academic queries, emergency assistance, Korean student life guidance, and embassy liaison.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/psak_logo.png">
+</head>
+<body>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" class="brand-logo-img">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About &amp; Cabinet</a></li>
+          <li><a href="scholarship.html" class="nav-link">Scholarships</a></li>
+          <li><a href="event.html" class="nav-link">Events &amp; Gallery</a></li>
+          <li><a href="contact.html" class="nav-link active">Support &amp; Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm open-donate-modal" id="topDonateBtn">Donate</button>
+          <a href="login.html" class="btn btn-primary btn-sm">Member Portal</a>
+          <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 34px; width: auto;">
+        </a>
+        <button class="drawer-close" aria-label="Close Navigation Drawer">&times;</button>
+      </div>
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About &amp; Leadership</a></li>
+        <li><a href="scholarship.html" class="nav-link">Scholarships in Korea</a></li>
+        <li><a href="event.html" class="nav-link">Events &amp; Activities</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact &amp; Helpdesk</a></li>
+      </ul>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn btn-gold btn-block open-donate-modal">Student Emergency Fund</button>
+      <a href="login.html" class="btn btn-primary btn-block">Member Portal / Register</a>
+    </div>
+  </aside>
+
+  <!-- Page Banner (Clean Header without subtitle line) -->
+  <section class="section-sm bg-emerald" style="padding-top: 1.75rem; padding-bottom: 1.75rem;">
+    <div class="container text-center">
+      <h1 style="color: var(--white); margin: 0; font-size: 1.85rem;">Support &amp; Emergency Assistance</h1>
+    </div>
+  </section>
+
+  <!-- Compact One-Page Contact & Support Grid -->
+  <section class="section bg-slate" style="padding-top: 2rem; padding-bottom: 2rem;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; align-items: stretch;">
+        
+        <!-- Left: Contact Form -->
+        <div style="background-color: var(--white); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+          <h2 style="font-size: 1.25rem; margin-bottom: 0.25rem;">Contact PSAK Secretariat</h2>
+          <p style="font-size: 0.825rem; color: var(--slate-600); margin-bottom: 1rem;">
+            Submit your inquiry below. We typically respond within 24–48 hours.
+          </p>
+
+          <form id="contactForm" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+            <div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                <div class="form-group">
+                  <label for="fullName" class="form-label">Full Name *</label>
+                  <input type="text" id="fullName" class="form-control" placeholder="e.g. Ali Ahmed" required>
+                </div>
+                <div class="form-group">
+                  <label for="emailAddr" class="form-label">Email Address *</label>
+                  <input type="email" id="emailAddr" class="form-control" placeholder="name@domain.com" required>
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                <div class="form-group">
+                  <label for="university" class="form-label">Korean University</label>
+                  <input type="text" id="university" class="form-control" placeholder="e.g. SNU, KAIST, Yonsei">
+                </div>
+                <div class="form-group">
+                  <label for="subject" class="form-label">Category *</label>
+                  <select id="subject" class="form-control" required>
+                    <option value="" disabled selected>Select category...</option>
+                    <option value="emergency">Emergency Support</option>
+                    <option value="scholarship">Scholarship &amp; Admission</option>
+                    <option value="visa">Visa &amp; ARC Inquiry</option>
+                    <option value="event">Event / Sports League</option>
+                    <option value="other">General Feedback</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="messageText" class="form-label">Message *</label>
+                <textarea id="messageText" class="form-control" placeholder="Describe your query in detail..." required style="min-height: 80px;"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top: 0.5rem;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Right: Official Channels & Hotlines in One Compact Box -->
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <!-- Direct Channels Box -->
+          <div style="background-color: var(--white); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.25rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Official Channels</h3>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <div>
+                <div style="font-weight: 700; color: var(--slate-800); font-size: 0.8rem;">General Secretariat</div>
+                <a href="mailto:psak.korea@gmail.com" style="font-size: 0.8rem;">psak.korea@gmail.com</a>
+              </div>
+              <div>
+                <div style="font-weight: 700; color: var(--slate-800); font-size: 0.8rem;">President Office</div>
+                <a href="mailto:president.psak@gmail.com" style="font-size: 0.8rem;">president.psak@gmail.com</a>
+              </div>
+            </div>
+
+            <div>
+              <div style="font-weight: 700; color: var(--slate-800); font-size: 0.8rem;">Headquarters</div>
+              <div style="font-size: 0.8rem; color: var(--slate-600);">Seoul &amp; Nationwide University Chapters, South Korea</div>
+            </div>
+          </div>
+
+          <!-- Emergency Hotlines in Korea -->
+          <div style="background-color: var(--primary-deep); color: white; border-radius: var(--radius-lg); padding: 1.25rem; box-shadow: var(--shadow-sm);">
+            <h3 style="color: white; font-size: 1.1rem; margin-bottom: 0.4rem;">Emergency Hotlines in Korea</h3>
+            <p style="font-size: 0.78rem; color: rgba(255,255,255,0.8); margin-bottom: 0.75rem;">Direct contact numbers for immediate assistance:</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem;">
+              <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-md); padding: 0.6rem;">
+                <div style="font-size: 0.68rem; text-transform: uppercase; color: var(--accent-light); font-weight: 700;">Police</div>
+                <div style="font-size: 1.15rem; font-weight: 800;">112</div>
+              </div>
+              <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-md); padding: 0.6rem;">
+                <div style="font-size: 0.68rem; text-transform: uppercase; color: var(--accent-light); font-weight: 700;">Ambulance / Fire</div>
+                <div style="font-size: 1.15rem; font-weight: 800;">119</div>
+              </div>
+              <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-md); padding: 0.6rem;">
+                <div style="font-size: 0.68rem; text-transform: uppercase; color: var(--accent-light); font-weight: 700;">Immigration</div>
+                <div style="font-size: 1.15rem; font-weight: 800;">1345</div>
+              </div>
+              <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-md); padding: 0.6rem;">
+                <div style="font-size: 0.68rem; text-transform: uppercase; color: var(--accent-light); font-weight: 700;">Pak Embassy</div>
+                <div style="font-size: 0.85rem; font-weight: 800; margin-top: 0.2rem;">02-796-8252</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Support Modal -->
+  <div class="modal-overlay" id="donationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn close-modal" aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <h3 id="modalTitle" style="font-size: 1.25rem;">PSAK Student Emergency Fund</h3>
+        <p style="font-size: 0.825rem; color: var(--slate-600); margin-top: 0.35rem;">
+          Your contributions directly assist fellow Pakistani students facing urgent medical, accommodation, or emergency situations in South Korea.
+        </p>
+      </div>
+
+      <div class="bank-detail-box">
+        <div class="bank-row">
+          <span class="bank-label">Bank Name</span>
+          <span class="bank-value">KEB HANA BANK (하나은행)</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Number</span>
+          <span class="bank-value">545-910007-72004</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Holder</span>
+          <span class="bank-value">파키스탄 스트던트 앤드 (PSAK)</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <button class="btn btn-primary btn-block copy-account-btn" data-account="545-910007-72004">
+          Copy Account (545-910007-72004)
+        </button>
+        <button class="btn btn-secondary btn-block close-modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-msg"></div>
+
+  <!-- Clean White Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.85rem;">
+            <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 46px; width: auto; max-width: 170px; object-fit: contain;">
+          </a>
+          <p style="margin-bottom: 0.85rem;">
+            Pakistan Students and Scholars Association Korea is a non-profit, student-led organization representing Pakistani academics and researchers across South Korea.
+          </p>
+          <p style="font-size: 0.78rem; color: var(--slate-500);">
+            Headquarters: Seoul, South Korea
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us &amp; Cabinet</a></li>
+            <li><a href="scholarship.html">Scholarship Directory</a></li>
+            <li><a href="event.html">Events &amp; Galleries</a></li>
+            <li><a href="contact.html">Support &amp; Emergency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="login.html">Member Portal</a></li>
+            <li><a href="#" class="open-donate-modal">Emergency Welfare Fund</a></li>
+            <li><a href="about.html#regional">Regional Chapters</a></li>
+            <li><a href="scholarship.html#roadmap">Application Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Emergency Contacts</h4>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Embassy of Pakistan, Seoul:</strong><br>
+            +82-2-796-8252
+          </p>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Korea Emergency:</strong> 112 (Police) | 119 (Medical/Fire)
+          </p>
+          <p style="font-size: 0.78rem;">
+            <strong>Immigration:</strong> 1345
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Pakistan Students and Scholars Association Korea (PSAK). All Rights Reserved.</div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="mailto:psak.korea@gmail.com">psak.korea@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

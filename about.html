@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us &amp; Leadership | PSAK</title>
+  <meta name="description" content="Learn about PSAK's history, mission, executive cabinet, and regional chapters representing Pakistani scholars across South Korea.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/psak_logo.png">
+</head>
+<body>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" class="brand-logo-img">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About &amp; Cabinet</a></li>
+          <li><a href="scholarship.html" class="nav-link">Scholarships</a></li>
+          <li><a href="event.html" class="nav-link">Events &amp; Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Support &amp; Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm open-donate-modal" id="topDonateBtn">Donate</button>
+          <a href="login.html" class="btn btn-primary btn-sm">Member Portal</a>
+          <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 34px; width: auto;">
+        </a>
+        <button class="drawer-close" aria-label="Close Navigation Drawer">&times;</button>
+      </div>
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About &amp; Leadership</a></li>
+        <li><a href="scholarship.html" class="nav-link">Scholarships in Korea</a></li>
+        <li><a href="event.html" class="nav-link">Events &amp; Activities</a></li>
+        <li><a href="contact.html" class="nav-link">Contact &amp; Helpdesk</a></li>
+      </ul>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn btn-gold btn-block open-donate-modal">Student Emergency Fund</button>
+      <a href="login.html" class="btn btn-primary btn-block">Member Portal / Register</a>
+    </div>
+  </aside>
+
+  <!-- Page Banner (Clean Header without subtitle line) -->
+  <section class="section-sm bg-emerald" style="padding-top: 2.25rem; padding-bottom: 2.25rem;">
+    <div class="container text-center">
+      <h1 style="color: var(--white); margin: 0; font-size: 1.85rem;">About PSAK &amp; Executive Cabinet</h1>
+    </div>
+  </section>
+
+  <!-- Organization Overview & History -->
+  <section class="section bg-white">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; align-items: center;">
+        <div>
+          <h2>A Home Away From Home for Pakistani Scholars</h2>
+          <p class="lead-text">
+            Pakistan Students and Scholars Association Korea (PSAK) is an independent non-profit organization established to provide a supportive collective voice for Pakistani students, graduate researchers, postdoctoral fellows, and visiting professors residing throughout the Republic of Korea.
+          </p>
+          <p>
+            Whether assisting prospective applicants with the Global Korea Scholarship (GKS), welcoming newly arrived master’s and doctoral candidates, or organizing nationwide sports tournaments and cultural galas, PSAK actively builds bridges between the Pakistani scholarly community and Korean society.
+          </p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.25rem;">
+            <div style="border-left: 3px solid var(--primary); padding-left: 0.75rem;">
+              <h4 style="margin-bottom: 0.15rem; font-size: 0.95rem;">Our Mission</h4>
+              <p style="font-size: 0.8rem; color: var(--slate-600);">To facilitate academic progress, cultural integration, and community welfare for all Pakistani scholars in Korea.</p>
+            </div>
+            <div style="border-left: 3px solid var(--accent); padding-left: 0.75rem;">
+              <h4 style="margin-bottom: 0.15rem; font-size: 0.95rem;">Our Vision</h4>
+              <p style="font-size: 0.8rem; color: var(--slate-600);">To produce globally competitive researchers and strengthen academic cooperation between Pakistan and South Korea.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--border-color); max-width: 440px; margin: 0 auto;">
+          <img src="assets/images/psak_banner_logo.png" alt="PSAK Emblem" style="width: 100%; height: auto; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Executive Cabinet Team Directory -->
+  <section class="section bg-slate">
+    <div class="container">
+      <div class="section-header">
+        <h2>Executive Cabinet</h2>
+        <p class="lead-text">Meet the researchers leading PSAK's nationwide chapters and initiatives.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- 1. President -->
+        <article class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/team/waseem_iqbal_president.jpg" alt="Waseem Iqbal Rao">
+          </div>
+          <div class="team-content">
+            <span class="team-role">President</span>
+            <h3 class="team-name">Waseem Iqbal Rao</h3>
+            <div class="team-uni">Yonsei University, Seoul</div>
+            <p class="team-bio">Ph.D. Researcher in Korean Linguistics. Former Lecturer at NUML Islamabad. Overseeing PSAK operations.</p>
+          </div>
+        </article>
+
+        <!-- 2. General Secretary -->
+        <article class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/team/shehzad_iqbal_gensec.jpg" alt="Shehzad Iqbal">
+          </div>
+          <div class="team-content">
+            <span class="team-role">General Secretary</span>
+            <h3 class="team-name">Shehzad Iqbal</h3>
+            <div class="team-uni">Kyungpook National University (KNU)</div>
+            <p class="team-bio">Ph.D. Scholar in Cold Atmospheric Plasma &amp; Biomedicine. Managing association governance.</p>
+          </div>
+        </article>
+
+        <!-- 3. Information Secretary -->
+        <article class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/team/muhammad_salman_infosec.jpg" alt="Muhammad Salman">
+          </div>
+          <div class="team-content">
+            <span class="team-role">Information Secretary</span>
+            <h3 class="team-name">Muhammad Salman</h3>
+            <div class="team-uni">Pusan National University (PNU)</div>
+            <p class="team-bio">Master’s Researcher in Applied Control Systems &amp; Robotics. Leading digital communications.</p>
+          </div>
+        </article>
+
+        <!-- 4. Finance Secretary -->
+        <article class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/team/sabab_ali_shah_finsec.jpg" alt="Sabab Ali Shah">
+          </div>
+          <div class="team-content">
+            <span class="team-role">Finance Secretary</span>
+            <h3 class="team-name">Sabab Ali Shah</h3>
+            <div class="team-uni">Hanyang University, Seoul</div>
+            <p class="team-bio">MS-Ph.D. Scholar in Civil &amp; Environmental Engineering. Directing student welfare fund distribution.</p>
+          </div>
+        </article>
+
+        <!-- 5. VP Female Scholars -->
+        <article class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/team/syeda_zille_minahil_vpfemale.jpg" alt="Syeda Zille Minahil">
+          </div>
+          <div class="team-content">
+            <span class="team-role">Vice President (Female Wing)</span>
+            <h3 class="team-name">Syeda Zille Minahil</h3>
+            <div class="team-uni">Chungbuk National University (CBNU)</div>
+            <p class="team-bio">Integrated Ph.D. Researcher in Computer Vision &amp; Deep Learning. Mentoring female Pakistani scholars.</p>
+          </div>
+        </article>
+
+        <!-- 6. VP North Region -->
+        <article class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/team/muhammad_latif_vpnorth.jpg" alt="Muhammad Latif">
+          </div>
+          <div class="team-content">
+            <span class="team-role">Vice President (North Region)</span>
+            <h3 class="team-name">Muhammad Latif</h3>
+            <div class="team-uni">Inha University, Incheon</div>
+            <p class="team-bio">Ph.D. Candidate in Mechanical Engineering. Coordinating chapters across Seoul, Incheon, and Gyeonggi.</p>
+          </div>
+        </article>
+
+        <!-- 7. VP South Region -->
+        <article class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/team/hamza_nasir_vpsouth.jpg" alt="Hamza Nasir">
+          </div>
+          <div class="team-content">
+            <span class="team-role">Vice President (South Region)</span>
+            <h3 class="team-name">Hamza Nasir</h3>
+            <div class="team-uni">Kyungpook National University, Daegu</div>
+            <p class="team-bio">Leading scholar coordination, student meetups, and regional welfare support across Daegu and Busan.</p>
+          </div>
+        </article>
+
+        <!-- 8. VP West Region -->
+        <article class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/team/muhammad_ammar_vpwest.jpg" alt="Muhammad Ammar Dilawar">
+          </div>
+          <div class="team-content">
+            <span class="team-role">Vice President (West Region)</span>
+            <h3 class="team-name">Muhammad Ammar Dilawar</h3>
+            <div class="team-uni">Sunchon National University</div>
+            <p class="team-bio">Ph.D. Researcher in Smart Livestock Farming and Animal Nutrition. Heading Jeolla provinces.</p>
+          </div>
+        </article>
+
+        <!-- 9. VP Central Region -->
+        <article class="team-card">
+          <div class="team-photo-wrap">
+            <img src="assets/images/team/maqsood_ali_vpcentral.jpg" alt="Maqsood Ali">
+          </div>
+          <div class="team-content">
+            <span class="team-role">Vice President (Central Region)</span>
+            <h3 class="team-name">Maqsood Ali</h3>
+            <div class="team-uni">Soonchunhyang University, Asan</div>
+            <p class="team-bio">Ph.D. Researcher in Regenerative Medicine &amp; Stem Cells. Managing Chungcheong and Daejeon regions.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional Chapters & Coverage Section -->
+  <section class="section bg-white" id="regional">
+    <div class="container">
+      <div class="section-header">
+        <h2>Regional Chapters Across Korea</h2>
+        <p class="lead-text">PSAK coordinates local university chapters divided into four primary geographic regions.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-number">Region 01</div>
+          <h3 class="pillar-title" style="color: var(--primary);">North Region</h3>
+          <p style="font-size: 0.78rem; font-weight: 700; color: var(--slate-500); margin-bottom: 0.5rem;">Seoul, Incheon, Gyeonggi, Gangwon</p>
+          <p class="pillar-desc">
+            Encompassing SNU, Yonsei, Korea University, Hanyang, Inha, SKKU, and Gachon.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">Region 02</div>
+          <h3 class="pillar-title" style="color: var(--primary);">Central Region</h3>
+          <p style="font-size: 0.78rem; font-weight: 700; color: var(--slate-500); margin-bottom: 0.5rem;">Daejeon, Sejong, Chungcheong</p>
+          <p class="pillar-desc">
+            Encompassing KAIST, Chungnam National (CNU), Chungbuk National (CBNU), UST, and Soonchunhyang.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">Region 03</div>
+          <h3 class="pillar-title" style="color: var(--primary);">South Region</h3>
+          <p style="font-size: 0.78rem; font-weight: 700; color: var(--slate-500); margin-bottom: 0.5rem;">Busan, Daegu, Ulsan, Gyeongsang</p>
+          <p class="pillar-desc">
+            Encompassing Pusan National (PNU), Kyungpook National (KNU), UNIST, POSTECH, and Yeungnam.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">Region 04</div>
+          <h3 class="pillar-title" style="color: var(--primary);">West Region</h3>
+          <p style="font-size: 0.78rem; font-weight: 700; color: var(--slate-500); margin-bottom: 0.5rem;">Gwangju, Jeolla Provinces</p>
+          <p class="pillar-desc">
+            Encompassing GIST, Chonnam National, Chonbuk National, and Sunchon National.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Support Modal -->
+  <div class="modal-overlay" id="donationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn close-modal" aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <h3 id="modalTitle" style="font-size: 1.25rem;">PSAK Student Emergency Fund</h3>
+        <p style="font-size: 0.825rem; color: var(--slate-600); margin-top: 0.35rem;">
+          Your contributions directly assist fellow Pakistani students facing urgent medical, accommodation, or emergency situations in South Korea.
+        </p>
+      </div>
+
+      <div class="bank-detail-box">
+        <div class="bank-row">
+          <span class="bank-label">Bank Name</span>
+          <span class="bank-value">KEB HANA BANK (하나은행)</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Number</span>
+          <span class="bank-value">545-910007-72004</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Holder</span>
+          <span class="bank-value">파키스탄 스트던트 앤드 (PSAK)</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <button class="btn btn-primary btn-block copy-account-btn" data-account="545-910007-72004">
+          Copy Account (545-910007-72004)
+        </button>
+        <button class="btn btn-secondary btn-block close-modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-msg"></div>
+
+  <!-- Clean White Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.85rem;">
+            <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 46px; width: auto; max-width: 170px; object-fit: contain;">
+          </a>
+          <p style="margin-bottom: 0.85rem;">
+            Pakistan Students and Scholars Association Korea is a non-profit, student-led organization representing Pakistani academics and researchers across South Korea.
+          </p>
+          <p style="font-size: 0.78rem; color: var(--slate-500);">
+            Headquarters: Seoul, South Korea
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us &amp; Cabinet</a></li>
+            <li><a href="scholarship.html">Scholarship Directory</a></li>
+            <li><a href="event.html">Events &amp; Galleries</a></li>
+            <li><a href="contact.html">Support &amp; Emergency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="login.html">Member Portal</a></li>
+            <li><a href="#" class="open-donate-modal">Emergency Welfare Fund</a></li>
+            <li><a href="about.html#regional">Regional Chapters</a></li>
+            <li><a href="scholarship.html#roadmap">Application Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Emergency Contacts</h4>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Embassy of Pakistan, Seoul:</strong><br>
+            +82-2-796-8252
+          </p>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Korea Emergency:</strong> 112 (Police) | 119 (Medical/Fire)
+          </p>
+          <p style="font-size: 0.78rem;">
+            <strong>Immigration:</strong> 1345
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Pakistan Students and Scholars Association Korea (PSAK). All Rights Reserved.</div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="mailto:psak.korea@gmail.com">psak.korea@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

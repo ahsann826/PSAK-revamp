@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Portal &amp; Registration | PSAK</title>
+  <meta name="description" content="Sign in to PSAK Member Portal or register as a Pakistani student/scholar studying in South Korea.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/psak_logo.png">
+</head>
+<body style="background-color: var(--slate-50);">
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" class="brand-logo-img">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About &amp; Cabinet</a></li>
+          <li><a href="scholarship.html" class="nav-link">Scholarships</a></li>
+          <li><a href="event.html" class="nav-link">Events &amp; Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Support &amp; Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm open-donate-modal" id="topDonateBtn">Donate</button>
+          <a href="login.html" class="btn btn-primary btn-sm">Member Portal</a>
+          <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 34px; width: auto;">
+        </a>
+        <button class="drawer-close" aria-label="Close Navigation Drawer">&times;</button>
+      </div>
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About &amp; Leadership</a></li>
+        <li><a href="scholarship.html" class="nav-link">Scholarships in Korea</a></li>
+        <li><a href="event.html" class="nav-link">Events &amp; Activities</a></li>
+        <li><a href="contact.html" class="nav-link">Contact &amp; Helpdesk</a></li>
+      </ul>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn btn-gold btn-block open-donate-modal">Student Emergency Fund</button>
+      <a href="login.html" class="btn btn-primary btn-block">Member Portal / Register</a>
+    </div>
+  </aside>
+
+  <!-- Auth Container -->
+  <section class="section" style="padding-top: 3rem; padding-bottom: 3.5rem;">
+    <div class="container">
+      <div class="auth-card">
+        <div style="text-align: center; margin-bottom: 1.25rem;">
+          <img src="assets/images/psak_logo.png" alt="PSAK" style="height: 42px; margin: 0 auto 0.75rem auto; width: auto;">
+          <h2 style="font-size: 1.35rem; margin-bottom: 0.25rem;">PSAK Scholar Portal</h2>
+          <p style="font-size: 0.825rem; color: var(--slate-500);">Connecting Pakistani academics across South Korea</p>
+        </div>
+
+        <!-- Tab Switching (Login vs Register) -->
+        <div class="auth-tabs" role="tablist">
+          <button class="auth-tab active" data-target="loginFormSection" role="tab" aria-selected="true">Sign In</button>
+          <button class="auth-tab" data-target="registerFormSection" role="tab" aria-selected="false">New Registration</button>
+        </div>
+
+        <!-- 1. Sign In Form -->
+        <div class="auth-form-content" id="loginFormSection" style="display: block;">
+          <form onsubmit="event.preventDefault(); showToast('Signed in successfully. Welcome to PSAK Portal.');">
+            <div class="form-group">
+              <label for="loginEmail" class="form-label">Email Address</label>
+              <input type="email" id="loginEmail" class="form-control" placeholder="name@university.ac.kr" required>
+            </div>
+            <div class="form-group">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
+                <label for="loginPassword" class="form-label" style="margin-bottom: 0;">Password</label>
+                <a href="#" onclick="event.preventDefault(); showToast('Password reset link sent to your email.');" style="font-size: 0.78rem; color: var(--primary);">Forgot?</a>
+              </div>
+              <input type="password" id="loginPassword" class="form-control" placeholder="Password" required>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.4rem; margin-bottom: 1.25rem;">
+              <input type="checkbox" id="rememberMe" style="accent-color: var(--primary);">
+              <label for="rememberMe" style="font-size: 0.8rem; color: var(--slate-600); margin-bottom: 0; cursor: pointer;">Keep me signed in on this device</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign In to Account</button>
+          </form>
+        </div>
+
+        <!-- 2. New Scholar Registration Form -->
+        <div class="auth-form-content" id="registerFormSection" style="display: none;">
+          <form onsubmit="event.preventDefault(); showToast('Registration submitted. Verification email sent.');">
+            <div class="form-group">
+              <label for="regName" class="form-label">Full Name *</label>
+              <input type="text" id="regName" class="form-control" placeholder="e.g. Usman Tariq" required>
+            </div>
+            <div class="form-group">
+              <label for="regEmail" class="form-label">Email Address *</label>
+              <input type="email" id="regEmail" class="form-control" placeholder="name@university.ac.kr" required>
+            </div>
+            <div class="form-group">
+              <label for="regUni" class="form-label">Korean University *</label>
+              <input type="text" id="regUni" class="form-control" placeholder="e.g. Seoul National University (SNU)" required>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div class="form-group">
+                <label for="regDegree" class="form-label">Program *</label>
+                <select id="regDegree" class="form-control" required>
+                  <option value="" disabled selected>Select...</option>
+                  <option value="undergraduate">Undergraduate (BS)</option>
+                  <option value="masters">Master's (MS)</option>
+                  <option value="phd">Doctorate (Ph.D.)</option>
+                  <option value="postdoc">Postdoctoral Fellow</option>
+                  <option value="professor">Faculty / Professor</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="regRegion" class="form-label">Region *</label>
+                <select id="regRegion" class="form-control" required>
+                  <option value="" disabled selected>Select...</option>
+                  <option value="north">North (Seoul/Incheon)</option>
+                  <option value="central">Central (Daejeon)</option>
+                  <option value="south">South (Busan/Daegu)</option>
+                  <option value="west">West (Gwangju)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="regPass" class="form-label">Password *</label>
+              <input type="password" id="regPass" class="form-control" placeholder="Create strong password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit Registration</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Support Modal -->
+  <div class="modal-overlay" id="donationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn close-modal" aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <h3 id="modalTitle" style="font-size: 1.25rem;">PSAK Student Emergency Fund</h3>
+        <p style="font-size: 0.825rem; color: var(--slate-600); margin-top: 0.35rem;">
+          Your contributions directly assist fellow Pakistani students facing urgent medical, accommodation, or emergency situations in South Korea.
+        </p>
+      </div>
+
+      <div class="bank-detail-box">
+        <div class="bank-row">
+          <span class="bank-label">Bank Name</span>
+          <span class="bank-value">KEB HANA BANK (하나은행)</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Number</span>
+          <span class="bank-value">545-910007-72004</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Holder</span>
+          <span class="bank-value">파키스탄 스트던트 앤드 (PSAK)</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <button class="btn btn-primary btn-block copy-account-btn" data-account="545-910007-72004">
+          Copy Account (545-910007-72004)
+        </button>
+        <button class="btn btn-secondary btn-block close-modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-msg"></div>
+
+  <!-- Clean White Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.85rem;">
+            <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 46px; width: auto; max-width: 170px; object-fit: contain;">
+          </a>
+          <p style="margin-bottom: 0.85rem;">
+            Pakistan Students and Scholars Association Korea is a non-profit, student-led organization representing Pakistani academics and researchers across South Korea.
+          </p>
+          <p style="font-size: 0.78rem; color: var(--slate-500);">
+            Headquarters: Seoul, South Korea
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us &amp; Cabinet</a></li>
+            <li><a href="scholarship.html">Scholarship Directory</a></li>
+            <li><a href="event.html">Events &amp; Galleries</a></li>
+            <li><a href="contact.html">Support &amp; Emergency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="login.html">Member Portal</a></li>
+            <li><a href="#" class="open-donate-modal">Emergency Welfare Fund</a></li>
+            <li><a href="about.html#regional">Regional Chapters</a></li>
+            <li><a href="scholarship.html#roadmap">Application Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Emergency Contacts</h4>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Embassy of Pakistan, Seoul:</strong><br>
+            +82-2-796-8252
+          </p>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Korea Emergency:</strong> 112 (Police) | 119 (Medical/Fire)
+          </p>
+          <p style="font-size: 0.78rem;">
+            <strong>Immigration:</strong> 1345
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Pakistan Students and Scholars Association Korea (PSAK). All Rights Reserved.</div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="mailto:psak.korea@gmail.com">psak.korea@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

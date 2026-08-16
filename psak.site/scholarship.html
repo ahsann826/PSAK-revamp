@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarships &amp; Grants in Korea | PSAK</title>
+  <meta name="description" content="Comprehensive guide to South Korean scholarships for Pakistani students: GKS, UST, KAIST, SNU, and Professor Laboratory Assistantships.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/psak_logo.png">
+</head>
+<body>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" class="brand-logo-img">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About &amp; Cabinet</a></li>
+          <li><a href="scholarship.html" class="nav-link active">Scholarships</a></li>
+          <li><a href="event.html" class="nav-link">Events &amp; Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Support &amp; Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm open-donate-modal" id="topDonateBtn">Donate</button>
+          <a href="login.html" class="btn btn-primary btn-sm">Member Portal</a>
+          <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 34px; width: auto;">
+        </a>
+        <button class="drawer-close" aria-label="Close Navigation Drawer">&times;</button>
+      </div>
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About &amp; Leadership</a></li>
+        <li><a href="scholarship.html" class="nav-link active">Scholarships in Korea</a></li>
+        <li><a href="event.html" class="nav-link">Events &amp; Activities</a></li>
+        <li><a href="contact.html" class="nav-link">Contact &amp; Helpdesk</a></li>
+      </ul>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn btn-gold btn-block open-donate-modal">Student Emergency Fund</button>
+      <a href="login.html" class="btn btn-primary btn-block">Member Portal / Register</a>
+    </div>
+  </aside>
+
+  <!-- Page Banner (Clean Header without subtitle line) -->
+  <section class="section-sm bg-emerald" style="padding-top: 2.25rem; padding-bottom: 2.25rem;">
+    <div class="container text-center">
+      <h1 style="color: var(--white); margin: 0; font-size: 1.85rem;">Scholarships in South Korea</h1>
+    </div>
+  </section>
+
+  <!-- Scholarships Explorer & Interactive Directory -->
+  <section class="section bg-slate">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <div class="search-input-wrap">
+          <input type="text" id="filterSearchInput" placeholder="Search scholarships (e.g. GKS, UST, KAIST, SNU)..." aria-label="Search scholarships">
+        </div>
+        <div class="filter-pills">
+          <button class="filter-btn active" data-filter="all">All Programs</button>
+          <button class="filter-btn" data-filter="government">Government (GKS)</button>
+          <button class="filter-btn" data-filter="graduate">Master's &amp; Ph.D.</button>
+          <button class="filter-btn" data-filter="lab">Professor Assistantship</button>
+          <button class="filter-btn" data-filter="postdoc">Postdoctoral</button>
+        </div>
+      </div>
+
+      <!-- Scholarship Cards Grid -->
+      <div class="pillars-grid" id="scholarshipsContainer">
+        <!-- 1. GKS Graduate -->
+        <article class="scholarship-card" data-category="government graduate">
+          <div>
+            <div class="scholarship-header">
+              <span class="scholarship-level scholarship-badge-gold">Government Funded</span>
+              <span style="font-size: 0.78rem; font-weight: 700; color: var(--slate-500);">Feb &amp; Sep Calls</span>
+            </div>
+            <h3 class="scholarship-title">Global Korea Scholarship (GKS Graduate)</h3>
+            <p class="scholarship-coverage">
+              <strong>Coverage:</strong> 100% Tuition + 1,000,000 KRW/month stipend + 1-Year Korean language training + Round-trip Airfare + NHIS Insurance.
+            </p>
+            <div class="scholarship-tags">
+              <span class="tag-item">Embassy Track</span>
+              <span class="tag-item">University Track</span>
+              <span class="tag-item">MS / Ph.D.</span>
+            </div>
+          </div>
+          <a href="https://www.studyinkorea.go.kr" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Official Portal</a>
+        </article>
+
+        <!-- 2. UST Fellowship -->
+        <article class="scholarship-card" data-category="graduate lab">
+          <div>
+            <div class="scholarship-header">
+              <span class="scholarship-level">Research Institutes</span>
+              <span style="font-size: 0.78rem; font-weight: 700; color: var(--slate-500);">Spring &amp; Fall</span>
+            </div>
+            <h3 class="scholarship-title">UST (University of Science &amp; Technology)</h3>
+            <p class="scholarship-coverage">
+              <strong>Coverage:</strong> Full Tuition waiver + Monthly stipend up to 1,600,000 KRW (PhD) / 1,200,000 KRW (MS) at top national labs (KIST, KIER, ETRI).
+            </p>
+            <div class="scholarship-tags">
+              <span class="tag-item">National Labs</span>
+              <span class="tag-item">STEM Disciplines</span>
+            </div>
+          </div>
+          <a href="https://www.ust.ac.kr" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Official Portal</a>
+        </article>
+
+        <!-- 3. Professor Lab RA/TA -->
+        <article class="scholarship-card" data-category="lab graduate">
+          <div>
+            <div class="scholarship-header">
+              <span class="scholarship-level">Lab Funded</span>
+              <span style="font-size: 0.78rem; font-weight: 700; color: var(--slate-500);">Year-Round</span>
+            </div>
+            <h3 class="scholarship-title">Professor Research Assistantship (RA / TA)</h3>
+            <p class="scholarship-coverage">
+              <strong>Coverage:</strong> Full or partial tuition waiver supported directly by Principal Investigator (PI) + 1,000,000–2,000,000 KRW monthly stipend.
+            </p>
+            <div class="scholarship-tags">
+              <span class="tag-item">Direct Emailing</span>
+              <span class="tag-item">Engineering &amp; IT</span>
+            </div>
+          </div>
+          <a href="about.html" class="btn btn-outline btn-sm">Ask PSAK Mentors</a>
+        </article>
+
+        <!-- 4. KAIST Fellowship -->
+        <article class="scholarship-card" data-category="graduate">
+          <div>
+            <div class="scholarship-header">
+              <span class="scholarship-level">University Funded</span>
+              <span style="font-size: 0.78rem; font-weight: 700; color: var(--slate-500);">Biannual</span>
+            </div>
+            <h3 class="scholarship-title">KAIST International Scholarship</h3>
+            <p class="scholarship-coverage">
+              <strong>Coverage:</strong> Full tuition exemption for 4 semesters (MS) / 8 semesters (PhD) + Monthly living allowance + Lab research subsidies.
+            </p>
+            <div class="scholarship-tags">
+              <span class="tag-item">Top Tier Tech</span>
+              <span class="tag-item">Daejeon Campus</span>
+            </div>
+          </div>
+          <a href="https://admission.kaist.ac.kr" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Official Portal</a>
+        </article>
+
+        <!-- 5. SNU Global Scholarship -->
+        <article class="scholarship-card" data-category="graduate government">
+          <div>
+            <div class="scholarship-header">
+              <span class="scholarship-level">University Funded</span>
+              <span style="font-size: 0.78rem; font-weight: 700; color: var(--slate-500);">Spring / Fall</span>
+            </div>
+            <h3 class="scholarship-title">Seoul National University (SNU) Global</h3>
+            <p class="scholarship-coverage">
+              <strong>Coverage:</strong> Full tuition exemption + Living expense subsidies (up to 1,200,000 KRW/month) + On-campus housing priority.
+            </p>
+            <div class="scholarship-tags">
+              <span class="tag-item">Seoul Campus</span>
+              <span class="tag-item">All Disciplines</span>
+            </div>
+          </div>
+          <a href="https://en.snu.ac.kr" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Official Portal</a>
+        </article>
+
+        <!-- 6. Brain Pool & Postdoctoral -->
+        <article class="scholarship-card" data-category="postdoc">
+          <div>
+            <div class="scholarship-header">
+              <span class="scholarship-level scholarship-badge-gold">Postdoc &amp; Fellow</span>
+              <span style="font-size: 0.78rem; font-weight: 700; color: var(--slate-500);">NRF Korea</span>
+            </div>
+            <h3 class="scholarship-title">Brain Pool &amp; NRF Postdoctoral Grants</h3>
+            <p class="scholarship-coverage">
+              <strong>Coverage:</strong> Salary (3,500,000–6,000,000 KRW/month) + Relocation allowance + Research funding for doctoral graduates.
+            </p>
+            <div class="scholarship-tags">
+              <span class="tag-item">Postdoc</span>
+              <span class="tag-item">NRF Funded</span>
+            </div>
+          </div>
+          <a href="https://www.nrf.re.kr" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Official Portal</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Step-by-Step Application Roadmap -->
+  <section class="section bg-white" id="roadmap">
+    <div class="container">
+      <div class="section-header">
+        <h2>5-Step Roadmap for Pakistani Applicants</h2>
+        <p class="lead-text">Proven steps recommended by PSAK senior researchers to secure admission in Korea.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+        <div style="background-color: var(--slate-50); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem;">
+          <div style="font-size: 0.8rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">STEP 01</div>
+          <h4 style="margin-bottom: 0.35rem;">Target Labs</h4>
+          <p style="font-size: 0.8rem; color: var(--slate-600);">Search faculty directories for labs matching your BS/MS thesis background.</p>
+        </div>
+
+        <div style="background-color: var(--slate-50); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem;">
+          <div style="font-size: 0.8rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">STEP 02</div>
+          <h4 style="margin-bottom: 0.35rem;">Draft Cold Email</h4>
+          <p style="font-size: 0.8rem; color: var(--slate-600);">Write concise email (< 250 words) attaching your academic CV and transcript.</p>
+        </div>
+
+        <div style="background-color: var(--slate-50); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem;">
+          <div style="font-size: 0.8rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">STEP 03</div>
+          <h4 style="margin-bottom: 0.35rem;">PI Interview</h4>
+          <p style="font-size: 0.8rem; color: var(--slate-600);">Attend Zoom interview with professor to discuss research goals and stipend.</p>
+        </div>
+
+        <div style="background-color: var(--slate-50); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem;">
+          <div style="font-size: 0.8rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">STEP 04</div>
+          <h4 style="margin-bottom: 0.35rem;">Apply to Portal</h4>
+          <p style="font-size: 0.8rem; color: var(--slate-600);">Submit formal application with HEC/MOFA-attested degrees and IELTS/TOEFL.</p>
+        </div>
+
+        <div style="background-color: var(--slate-50); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem;">
+          <div style="font-size: 0.8rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem;">STEP 05</div>
+          <h4 style="margin-bottom: 0.35rem;">Visa &amp; Arrival</h4>
+          <p style="font-size: 0.8rem; color: var(--slate-600);">Receive Certificate of Admission (CoA), apply for D-2 visa, and travel to Korea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Support Modal -->
+  <div class="modal-overlay" id="donationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn close-modal" aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <h3 id="modalTitle" style="font-size: 1.25rem;">PSAK Student Emergency Fund</h3>
+        <p style="font-size: 0.825rem; color: var(--slate-600); margin-top: 0.35rem;">
+          Your contributions directly assist fellow Pakistani students facing urgent medical, accommodation, or emergency situations in South Korea.
+        </p>
+      </div>
+
+      <div class="bank-detail-box">
+        <div class="bank-row">
+          <span class="bank-label">Bank Name</span>
+          <span class="bank-value">KEB HANA BANK (하나은행)</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Number</span>
+          <span class="bank-value">545-910007-72004</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-label">Account Holder</span>
+          <span class="bank-value">파키스탄 스트던트 앤드 (PSAK)</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <button class="btn btn-primary btn-block copy-account-btn" data-account="545-910007-72004">
+          Copy Account (545-910007-72004)
+        </button>
+        <button class="btn btn-secondary btn-block close-modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-msg"></div>
+
+  <!-- Clean White Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 0.85rem;">
+            <img src="assets/images/psak_logo.png" alt="PSAK Logo" style="height: 46px; width: auto; max-width: 170px; object-fit: contain;">
+          </a>
+          <p style="margin-bottom: 0.85rem;">
+            Pakistan Students and Scholars Association Korea is a non-profit, student-led organization representing Pakistani academics and researchers across South Korea.
+          </p>
+          <p style="font-size: 0.78rem; color: var(--slate-500);">
+            Headquarters: Seoul, South Korea
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us &amp; Cabinet</a></li>
+            <li><a href="scholarship.html">Scholarship Directory</a></li>
+            <li><a href="event.html">Events &amp; Galleries</a></li>
+            <li><a href="contact.html">Support &amp; Emergency</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul class="footer-links">
+            <li><a href="login.html">Member Portal</a></li>
+            <li><a href="#" class="open-donate-modal">Emergency Welfare Fund</a></li>
+            <li><a href="about.html#regional">Regional Chapters</a></li>
+            <li><a href="scholarship.html#roadmap">Application Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Emergency Contacts</h4>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Embassy of Pakistan, Seoul:</strong><br>
+            +82-2-796-8252
+          </p>
+          <p style="font-size: 0.78rem; margin-bottom: 0.4rem;">
+            <strong>Korea Emergency:</strong> 112 (Police) | 119 (Medical/Fire)
+          </p>
+          <p style="font-size: 0.78rem;">
+            <strong>Immigration:</strong> 1345
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Pakistan Students and Scholars Association Korea (PSAK). All Rights Reserved.</div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="mailto:psak.korea@gmail.com">psak.korea@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filter.js"></script>
+</body>
+</html>
