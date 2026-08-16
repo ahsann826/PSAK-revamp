@@ -659,7 +659,7 @@ p:last-child { margin-bottom: 0; }
 .pillar-top-logo {
   height: 28px;
   width: auto;
-  margin: 0 auto 0.65rem auto;
+  margin: 0 auto 0.75rem auto;
   display: block;
   object-fit: contain;
 }
