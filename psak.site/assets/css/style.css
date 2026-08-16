@@ -2012,6 +2012,34 @@ textarea.form-control {
   padding-left: 2px;
 }
 
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background-color: var(--slate-100);
+  color: var(--slate-700);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.social-icon-btn:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(6, 64, 43, 0.2);
+}
+
 .footer-bottom {
   padding-top: 1.5rem;
   border-top: 1px solid var(--border-color);
