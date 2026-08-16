@@ -1890,25 +1890,24 @@ textarea.form-control {
 .president-message-section {
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 18% 50%, #064e3b 0%, #033624 55%, #022216 100%);
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
+  background: radial-gradient(circle at 16% 50%, #085337 0%, #033220 55%, #011f13 100%);
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .president-crescent-wrap {
   position: absolute;
   top: 50%;
-  left: 3.5rem;
+  left: 3rem;
   transform: translateY(-50%);
-  width: 280px;
-  height: 280px;
-  opacity: 0.45;
+  width: 240px;
+  height: 240px;
+  opacity: 0.70;
   pointer-events: none;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0 0 35px rgba(52, 211, 153, 0.4)) drop-shadow(0 0 15px rgba(255, 255, 255, 0.35));
   transition: all var(--transition-normal);
 }
 
@@ -1921,27 +1920,27 @@ textarea.form-control {
 @media (min-width: 1200px) {
   .president-crescent-wrap {
     left: 4.5rem;
-    width: 320px;
-    height: 320px;
-    opacity: 0.50;
+    width: 260px;
+    height: 260px;
+    opacity: 0.75;
   }
 }
 
 @media (max-width: 992px) {
   .president-crescent-wrap {
-    left: 0.5rem;
-    width: 200px;
-    height: 200px;
-    opacity: 0.28;
+    left: 0.75rem;
+    width: 190px;
+    height: 190px;
+    opacity: 0.45;
   }
 }
 
 @media (max-width: 640px) {
   .president-crescent-wrap {
-    left: -35px;
-    width: 150px;
-    height: 150px;
-    opacity: 0.20;
+    left: -20px;
+    width: 140px;
+    height: 140px;
+    opacity: 0.30;
   }
 }
 

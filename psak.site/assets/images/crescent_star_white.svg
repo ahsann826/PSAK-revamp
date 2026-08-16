@@ -1,14 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
   <defs>
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <filter id="crescentGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur1" />
+      <feGaussianBlur stdDeviation="5" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
     </filter>
   </defs>
-  <g fill="#ffffff" filter="url(#softGlow)">
-    <!-- Crescent -->
-    <path d="M 425.4 286.8 A 180 180 0 1 0 213.2 74.6 A 163 163 0 1 1 425.4 286.8 Z" />
-    <!-- 5-Pointed Star tilted towards top-right -->
-    <polygon points="300.2,126.8 333.3,143.7 359.6,117.4 353.8,154.2 386.9,171.1 350.2,176.9 344.4,213.7 327.5,180.6 290.7,186.4 317.0,160.1" />
+  <g fill="#a7f3d0" fill-opacity="0.85" filter="url(#crescentGlow)">
+    <!-- Upright Crescent (Outer curve on left, opening on right) -->
+    <path d="M 300.01 289.99 A 150 150 0 1 0 211.25 53.29 A 132 132 0 1 1 300.01 289.99 Z" />
+    <!-- 5-Pointed Star in upper right -->
+    <polygon points="270.00,96.00 279.88,126.40 311.85,126.40 285.99,145.19 295.86,175.60 270.00,156.81 244.14,175.60 254.01,145.19 228.15,126.40 260.12,126.40" />
   </g>
 </svg>
